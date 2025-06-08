@@ -16,7 +16,7 @@ def overlay():
     image = Image.open(BytesIO(response.content)).convert("RGB")
     image.thumbnail((1080, 1080))
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("arial.ttf", 40)
+    font = ImageFont.truetype("OpenSans-Regular.ttf", 40)
 
     def wrap(text, width):
         lines = []
